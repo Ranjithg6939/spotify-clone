@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  padding: 16px;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.side-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.perimium-text,
+.install-app {
+  display: none;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 4px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.perimium-text {
+  background-color: white;
+  color: black;
+}
+
+.install-app {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .perimium-text,
+  .install-app {
+    display: block;
+  }
+}
+
+.perimium-text:hover {
+  background-color: #7d3636;
+  color: white;
+}
+
+.install-app:hover {
+  background-color: #222;
+}
+
+.profile {
+  width: 32px;
+  height: 32px;
+  background-color: #1db954;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile:hover {
+  transform: scale(1.3);
+}
+
+
+.song-category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.song {
+  background-color: white;
+  color: black;
+  padding: 4px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.song:hover {
+  background-color: #333;
+  color: white;
+}
+
+
+.song.music,
+.song.podacasts {
+  background-color: black;
+  color: white;
+}
+
+.song.music:hover,
+.song.podacasts:hover {
+  background-color: #333;
+}

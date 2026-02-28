@@ -1,0 +1,172 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.album-details {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .album-details {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.alb-image {
+  width: 190px;
+  height: 190px;
+  border-radius: 14px;
+}
+
+.album-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.playlist-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.albumdata-name {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.albumdata-desc {
+  margin-top: 6px;
+  font-size: 18px;
+  color: #b3b3b3;
+  max-width: 420px;
+  line-height: 1.4;
+}
+
+.albumdata-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.spotify-img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.songs-list {
+  display: grid;
+  grid-template-columns:
+    0.5fr  
+    2.5fr  
+    1.5fr   
+    1.2fr  
+    0.6fr; 
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding: 0 0.75rem;
+  color: #a7a7a7;
+  font-weight: 600;
+  align-items: center;
+}
+
+.clock-icon {
+  width: 16px;
+  height: 16px;
+  justify-self: end;
+}
+
+@media (max-width: 768px) {
+  .songs-list {
+    grid-template-columns: 0.5fr 3fr 1fr;
+  }
+
+  .songs-list .date,
+  .songs-list .clock-icon {
+    display: none;
+  }
+}
+
+
+.song-data-list {
+  display: grid;
+  grid-template-columns:
+    0.5fr
+    2.5fr
+    1.5fr
+    1.2fr
+    0.6fr;
+  padding: 0.65rem 0.75rem;
+  align-items: center;
+  color: #a7a7a7;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.song-data-list:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
+  .song-data-list {
+    grid-template-columns: 0.5fr 3fr 1fr;
+  }
+
+  .song-data-list .date,
+  .song-data-list .duration {
+    display: none;
+  }
+}
+
+.song-number {
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+.song-title-col {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.item-image {
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.song-title {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.song-album {
+  font-size: 15px;
+  color: #b3b3b3;
+}
+
+.date {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+.duration {
+  font-size: 14px;
+  color: #a7a7a7;
+  justify-self: end;
+  text-align: right;
+}

@@ -1,0 +1,45 @@
+ .song-item-container{
+    min-width: 200px;        
+    min-height: 100px;      
+    background-color: #121212;     
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+ }
+ .song-item-container:hover {
+  background-color: #282828;
+  transform: translateY(-4px);
+}
+
+.song-image {
+  width: 80%;                  
+  aspect-ratio: 1 / 1;          
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.song-name{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;          
+}
+
+.song-desc {
+  color: #b3b3b3;
+  font-size: 14px;
+  line-height: 1.4;
+  display: -webkit-box;     
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+

@@ -1,0 +1,9 @@
+.app-container{
+  height: 100vh;
+  background-color: black;
+}
+
+.container {
+  height: 90%;
+  display: flex;
+}
